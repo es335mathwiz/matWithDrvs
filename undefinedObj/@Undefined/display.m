@@ -1,2 +1,2 @@
 function display(uObj)
-fprintf('undefined object: set with string=>>%s<<',uObj.where);
+fprintf('Undefined object: set with string=>>%s<<',uObj.where);
