@@ -1,5 +1,5 @@
 function theRes=semiClone(mwdA)
-theRes=matWithDrvs;
+theRes=MatWithDrvs;
 theRes.theVarNames=mwdA.theVarNames;
 theRes.numVars=mwdA.numVars;
 theRes.secDrvs=mwdA.secDrvs;
