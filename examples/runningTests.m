@@ -1,4 +1,7 @@
 %addpath G:/git/matWithDrvsBothQ/examples
+
+%matclipse aparently modifyies matlab command line behavior by putting 
+%some conflicting .m files early in the matlab path
 warning('off','MATLAB:dispatcher:nameConflict')
 
 gitRepo='G:/git/matWithDrvsBothQ';
