@@ -10,4 +10,6 @@ addpath([gitRepo '/UndefinedObj/tests']);
 tc=UndefinedTest;
 ts=matlab.unittest.TestSuite.fromClass(?UndefinedTest);
 res=run(ts);
+addpath([gitRepo '/MatWithDrvs']);
+addpath([gitRepo '/MatWithDrvs/tests']);
 warning('on','MATLAB:dispatcher:nameConflict')

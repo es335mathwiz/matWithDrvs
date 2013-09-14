@@ -1,0 +1,19 @@
+function [xx,ff]=chkPlus
+noRows=2;noCols=1;
+mwdA=MatWithDrvs(...
+rand(noRows,noCols),{'aa','bb'},{rand(noRows,noCols),rand(noRows,noCols)},...
+{rand(noRows,noCols),rand(noRows,noCols),rand(noRows,noCols)});
+mwdB=MatWithDrvs(...
+rand(noRows,noCols),{'aa','bb'},{rand(noRows,noCols),rand(noRows,noCols)},...
+{rand(noRows,noCols),rand(noRows,noCols),rand(noRows,noCols)});
+vA=mwdA;vB=mwdB;vC=rand(3,1);
+[xx,ff]=...
+fsolve(@aFunc,rand(1,1),...
+optimset('DerivativeCheck','on','FunValCheck','on', 'Jacobian', 'on'),vA,vB,vC);
+end
+function [aRes,aRes01]=aFunc(xx,v1,v2,v3)
+%[aRes,aRes01,aRes02]=matFunc([xx(1),xx(1)]);
+[aRes,aRes01,~]=matFunc([xx(1),xx(1)]);
+aRes=aRes(2)-1;
+aRes01=aRes01(2);
+end

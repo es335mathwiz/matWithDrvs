@@ -1,0 +1,14 @@
+#TeXlipse project settings
+#Sat Jun 01 13:22:07 EDT 2013
+markTmpDer=true
+builderNum=2
+outputDir=
+makeIndSty=
+bibrefDir=
+outputFormat=pdf
+tempDir=tmp
+mainTexFile=MatWithDrvsDoc.tex
+outputFile=MatWithDrvsDoc.pdf
+langSpell=en
+markDer=true
+srcDir=
